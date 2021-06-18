@@ -19,9 +19,9 @@ function checkFields(req, res, next) {
     const {username, password} = req.body
      if (
         !username 
-        || username.trim() === null 
+        // || username.trim() === null 
         || !password
-        || password.trim() === null
+        // || password.trim() === null
     ){
         res.status(422).json({
             message: `username and password required`
